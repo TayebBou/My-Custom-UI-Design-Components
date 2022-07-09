@@ -1,0 +1,44 @@
+.full-images {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 40em;
+    position: relative;
+  }
+
+.slider-button {
+    position: absolute;
+    width: 3em;
+    font-size: 2em;
+    border: none;
+    background-color: #00000000;
+    height: -webkit-fill-available;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.right {
+    right: 0;
+}
+
+.right:enabled:hover {
+    background-color: #00000042;
+}
+
+.right:disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
+
+.left {
+    left: 0;
+}
+
+.left:enabled:hover {
+    background-color: #00000042;
+}
+
+.left:disabled {
+    opacity: 0.2;
+    cursor: auto;
+}
