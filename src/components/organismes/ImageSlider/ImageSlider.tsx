@@ -2,13 +2,14 @@ import { FC, useRef, useState } from 'react'
 import { IPhoto } from '../../../shared/types/photo.model'
 import Button from '../../atoms/Button/Button'
 import FullScreen from '../../molecules/FullScreen/FullScreen'
-import styles from './BigImageSlider.module.css'
+import MiniImageSlider from '../../molecules/MiniImageSlider/MiniImageSlider'
+import styles from './ImageSlider.module.css'
 
-type BigImageSliderProps = {
+type ImageSliderProps = {
   photos: IPhoto[]
 }
 
-const BigImageSlider: FC<BigImageSliderProps> = (props) => {
+const ImageSlider: FC<ImageSliderProps> = (props) => {
   const photos = props.photos[0].photos
 
   const [x, setX] = useState(0)
@@ -74,8 +75,9 @@ const BigImageSlider: FC<BigImageSliderProps> = (props) => {
         </span>
         <FullScreen onClick={openFullScreen} />
       </div>
+      <MiniImageSlider photos={props.photos} imgIndex={Math.abs(x / 100)} handleRight={handleRight} handleLeft={handleLeft} />
     </div>
   )
 }
 
-export default BigImageSlider
+export default ImageSlider
