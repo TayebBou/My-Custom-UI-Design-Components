@@ -1,0 +1,10 @@
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}
