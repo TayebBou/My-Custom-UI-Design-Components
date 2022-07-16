@@ -16,3 +16,11 @@
     display: flex;
     padding: 1em;
 }
+
+@media (orientation: landscape) and (display-mode: fullscreen) {
+    .img {
+        width: 3em;
+        display: flex;
+        padding: 1.5em;
+    }
+}

@@ -2,7 +2,7 @@ import { FC, useRef, useState } from 'react'
 import { IPhoto } from '../../../shared/types/photo.model'
 import Button from '../../atoms/Button/Button'
 import FullScreen from '../../molecules/FullScreen/FullScreen'
-import MiniImageSlider from '../../molecules/MiniImageSlider/MiniImageSlider'
+import MiniImageSlider from '../MiniImageSlider/MiniImageSlider'
 import styles from './ImageSlider.module.css'
 
 type ImageSliderProps = {
@@ -29,7 +29,6 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
 
   const openFullScreen = () => {
     const element = images.current
-
     if (element) {
       if (!document.fullscreenElement) {
         element.requestFullscreen()
@@ -75,7 +74,12 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
         </span>
         <FullScreen onClick={openFullScreen} />
       </div>
-      <MiniImageSlider photos={props.photos} imgIndex={Math.abs(x / 100)} handleRight={handleRight} handleLeft={handleLeft} />
+      <MiniImageSlider
+        photos={props.photos}
+        imgIndex={Math.abs(x / 100)}
+        handleRight={handleRight}
+        handleLeft={handleLeft}
+      />
     </div>
   )
 }
