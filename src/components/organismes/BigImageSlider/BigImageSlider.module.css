@@ -1,0 +1,99 @@
+.full-images {
+  display: flex;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+.fullscreen {
+  max-width: 40em;
+}
+
+.slider-button {
+  position: absolute;
+  width: 3em;
+  font-size: 2em;
+  background-color: #00000000;
+  height: -webkit-fill-available;
+  color: white;
+  z-index: 1;
+}
+
+.slider-button:enabled:hover {
+  background-color: #00000042;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.span {
+  position: absolute;
+  font-size: 1em;
+  background-color: #000000;
+  color: white;
+  bottom: 0;
+  left: 0;
+  padding: 0.3em 1em;
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) {
+  .full-images {
+    max-width: 100vw;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (orientation: landscape) and (display-mode: fullscreen) {
+  .full-images {
+    max-width: 70vw;
+  }
+  .slider-button {
+    width: 4em;
+  }
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) and (max-width: 500px) {
+  .full-images {
+    height: 20em;
+  }
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) and (max-width: 600px) and (min-width: 500px) {
+  .full-images {
+    height: 26em;
+  }
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) and (max-width: 900px) and (min-width: 600px) {
+  .full-images {
+    height: 39em;
+  }
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) and (max-width: 1000px) and (min-width: 900px) {
+  .full-images {
+    height: 45em;
+  }
+}
+
+@media (orientation: portrait) and (display-mode: fullscreen) and (min-width: 1000px) {
+  .full-images {
+    height: 48em;
+  }
+}
+
+@media (orientation: portrait) {
+  .full-images {
+    max-width: 100%;
+  }
+}
