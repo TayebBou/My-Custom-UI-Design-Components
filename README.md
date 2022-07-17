@@ -1,10 +1,31 @@
-# Getting Started with Create React App
+# Getting Started with My Custom UI Design Components
 
+# LIVE HERE : https://
+
+My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organismes to reuse them in other ReactJS projects.
+Technical stack : React JS / TypeScript / Atomic Design / CRA / Cypress / CSS / ESLint.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
+For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
+
+Image Here
+
+## How to run
+
+### Install Node.js plateform
+
+( Choose the LTS version recommanded for most users )
 
 In the project directory, you can run:
+
+### `npm install --global yarn`
+
+to install the yarn package, it's an alternative of npm.
+
+### `yarn install`
+
+To install all dependencies.
 
 ### `yarn start`
 
@@ -13,6 +34,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### You can start using the application with all its features
+
+Image Here
 
 ### `yarn test`
 
