@@ -16,27 +16,23 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
   const images: React.LegacyRef<HTMLDivElement> = useRef(null)
 
   const handleRight = () => {
-    if (x !== -100 * (photos.length - 1)) {
+    if (photos.length && photos.length > 1 && x > -100 * (photos.length -1) && x <= 0 && x % 100 === 0 && Number.isInteger(x)) {
       setX((x) => x - 100)
     }
   }
 
   const handleLeft = () => {
-    if (x !== 0) {
+    if (photos.length && photos.length > 1 && x < 0 && x >= -100 * (photos.length - 1) && x % 100 === 0 && Number.isInteger(x)) {
       setX((x) => x + 100)
     }
   }
 
   const openFullScreen = () => {
-    const element = images.current
-    if (element) {
-      if (!document.fullscreenElement) {
-        element.requestFullscreen()
-      } else {
-        if (document.exitFullscreen) {
-          document.exitFullscreen()
-        }
-      }
+    const element = images.current as HTMLDivElement
+    if (!document.fullscreenElement) {
+      element.requestFullscreen()
+    } else {
+      document.exitFullscreen()
     }
   }
 

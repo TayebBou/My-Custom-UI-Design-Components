@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import styles from './App.module.css'
+import BigImageSlider from './components/organismes/BigImageSlider/BigImageSlider'
 import ImageSlider from './components/organismes/ImageSlider/ImageSlider'
 import data from './server/data.json'
 import { IPhoto } from './shared/types/photo.model'
