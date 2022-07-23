@@ -6,11 +6,6 @@ import { IPhoto } from '../../../shared/types/photo.model'
 describe('BigImageSlider component', () => {
   beforeEach(() => {
     // Arrange
-    ;(document as any).requestFullscreen = jest.fn()
-    ;(document as any).exitFullscreen = jest.fn()
-    ;(document as any).fullscreenEnabled = jest.fn()
-    ;(document as any).fullscreenchange = jest.fn()
-    ;(document as any).fullscreenerror = jest.fn()
     render(<BigImageSlider photos={data.photos as IPhoto[]} />)
   })
 
@@ -44,22 +39,6 @@ describe('BigImageSlider component', () => {
     await waitFor(() => {
       expect(BigImages[0]).toHaveStyle({ transform: `translateX(-100%)` })
     })
-  })
-
-  test('when user click on fullscreen button the slider is on fullscreen mode', async () => {
-    const fullScreenButton = await screen.findByAltText('full screen')
-    const divImages = (fullScreenButton.closest('div') as HTMLDivElement)
-      .parentElement as HTMLDivElement
-
-    divImages.requestFullscreen = jest.fn()
-    fireEvent.click(fullScreenButton)
-
-    expect(divImages.requestFullscreen).toHaveBeenCalled()
-    ;(document as any).fullscreenElement = true
-
-    fireEvent.click(fullScreenButton)
-
-    expect(document.exitFullscreen).toHaveBeenCalled()
   })
 })
 

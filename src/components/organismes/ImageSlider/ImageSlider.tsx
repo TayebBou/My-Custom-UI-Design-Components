@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import { IPhoto } from '../../../shared/types/photo.model'
 import Button from '../../atoms/Button/Button'
 import FullScreen from '../../molecules/FullScreen/FullScreen'
@@ -13,6 +13,7 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
   const photos = props.photos[0].photos
 
   const [x, setX] = useState(0)
+  const [isRendered, setIsRendered] = useState(false)
   const images: React.LegacyRef<HTMLDivElement> = useRef(null)
 
   const handleRight = () => {
@@ -26,15 +27,11 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
       setX((x) => x + 100)
     }
   }
-
-  const openFullScreen = () => {
-    const element = images.current as HTMLDivElement
-    if (!document.fullscreenElement) {
-      element.requestFullscreen()
-    } else {
-      document.exitFullscreen()
-    }
-  }
+  
+  useEffect(() => {
+    setIsRendered(true)
+  },[])
+  
 
   return (
     <div ref={images} className={styles.fullscreen}>
@@ -68,7 +65,11 @@ const ImageSlider: FC<ImageSliderProps> = (props) => {
         <span className={styles.span}>
           {Math.abs(x / 100) + 1} / {photos.length}
         </span>
-        <FullScreen onClick={openFullScreen} />
+        {isRendered ?
+          <FullScreen element={images.current as HTMLElement} />
+          :
+          <FullScreen />
+        }
       </div>
       <MiniImageSlider
         photos={props.photos}
