@@ -1,6 +1,6 @@
 {
   "name": "my-custom-ui-design-components",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -92,7 +92,9 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/**/*.d.ts",
+      "!src/index.tsx",
+      "!src/reportWebVitals.ts"
     ],
     "setupFiles": [
       "react-app-polyfill/jsdom"

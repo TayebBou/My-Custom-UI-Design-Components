@@ -18,22 +18,20 @@ const MiniImageSlider: FC<MiniImageSliderProps> = (props) => {
 
   // handling screen size when change
   const handleResize = useCallback(() => {
-    const element = miniImages.current
-    if (element) {
-      const miniImageWidth = element.offsetWidth
-      // two mini images only when mini images div is between 306 px and 391 px
-      if (miniImageWidth < 391 && miniImageWidth > 305) {
-        SetNewStyle('calc(25% - 46px)')
-        setX(Math.floor(props.imgIndex / 2) * -miniImageWidth)
-        // one mini image only when mini images is under or equal 305 px
-      } else if (miniImageWidth <= 305) {
-        SetNewStyle('calc(50% - 46px)')
-        setX(props.imgIndex * -miniImageWidth)
-        // three mini images only when mini images div is equal or over 391ox
-      } else {
-        setX(Math.floor(props.imgIndex / 3) * -miniImageWidth)
-        SetNewStyle('calc(16.66% - 46px)')
-      }
+    const element = miniImages.current as HTMLDivElement
+    const miniImageWidth = element.offsetWidth
+    // two mini images only when mini images div is between 306 px and 391 px
+    if (miniImageWidth < 391 && miniImageWidth > 305) {
+      SetNewStyle('calc(25% - 46px)')
+      setX(Math.floor(props.imgIndex / 2) * -miniImageWidth)
+      // one mini image only when mini images is under or equal 305 px
+    } else if (miniImageWidth <= 305) {
+      SetNewStyle('calc(50% - 46px)')
+      setX(props.imgIndex * -miniImageWidth)
+      // three mini images only when mini images div is equal or over 391ox
+    } else {
+      setX(Math.floor(props.imgIndex / 3) * -miniImageWidth)
+      SetNewStyle('calc(16.66% - 46px)')
     }
   }, [props.imgIndex])
 
