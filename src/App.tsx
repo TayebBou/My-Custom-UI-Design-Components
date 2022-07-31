@@ -4,13 +4,16 @@ import BigImageSlider from './components/organismes/BigImageSlider/BigImageSlide
 import ImageSlider from './components/organismes/ImageSlider/ImageSlider'
 import data from './server/data.json'
 import { IPhoto } from './shared/types/photo.model'
+import NavBarSample from './components/organismes/NavBarSample/NavBarSample'
 
 const App: FC = () => {
-
   return (
-    <div className={styles.app}>
-      <ImageSlider photos={data.photos as IPhoto[]} />
-    </div>
+    <>
+      <NavBarSample/>
+      <div className={styles.app}>
+        <ImageSlider photos={data.photos as IPhoto[]} />
+      </div>
+    </>
   )
 }
 
