@@ -1,4 +1,13 @@
 .navbar {
     background-color: #0082e694;
     box-shadow: 0px -34px 8px 32px;
+    justify-content: right;
+}
+
+.dropdownmenu {
+    float: right;
+}
+
+.logo {
+    margin-right: auto;
 }

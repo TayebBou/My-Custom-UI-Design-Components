@@ -1,19 +1,17 @@
 import { FC } from 'react'
 import styles from './App.module.css'
-import BigImageSlider from './components/organismes/BigImageSlider/BigImageSlider'
-import ImageSlider from './components/organismes/ImageSlider/ImageSlider'
-import data from './server/data.json'
-import { IPhoto } from './shared/types/photo.model'
 import NavBarSample from './components/organismes/NavBarSample/NavBarSample'
+import AppRoutes from './routes'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const App: FC = () => {
   return (
-    <>
-      <NavBarSample/>
+    <Router>
+      <NavBarSample />
       <div className={styles.app}>
-        <ImageSlider photos={data.photos as IPhoto[]} />
+        <AppRoutes />
       </div>
-    </>
+    </Router>
   )
 }
 

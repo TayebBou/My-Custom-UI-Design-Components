@@ -1,0 +1,15 @@
+.h2 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+    color: #5e9ed0;
+    font-weight: 350;
+}
+.h2:hover {
+    background-color: rgb(240, 240, 240);
+    font-weight: 400;
+}
+
+.link {
+    text-decoration: none;
+}
