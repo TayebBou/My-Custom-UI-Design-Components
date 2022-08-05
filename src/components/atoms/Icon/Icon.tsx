@@ -5,7 +5,7 @@ type IconProps = {
     src: string
     alt: string
     className?: string
-    size?: number 
+    size?: string 
 }
 
 const Icon: FC<IconProps> = (props) => {
@@ -18,8 +18,7 @@ const Icon: FC<IconProps> = (props) => {
 }
 
 Icon.defaultProps = {
-    className: '',
-    size: 32
+    className: ''
 }
 
 export default Icon;

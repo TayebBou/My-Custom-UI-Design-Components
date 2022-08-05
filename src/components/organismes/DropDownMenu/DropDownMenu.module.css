@@ -29,3 +29,7 @@
   border-radius: 6px;
   border: solid 1px #20abde;
 }
+
+.dropdown-item {
+  color: #5e9ed0;
+}

@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useCallback, useEffect, useRef, useState } from 'react'
 import Button from '../../atoms/Button/Button'
 import Icon from '../../atoms/Icon/Icon'
 import expand from '../../../assets/images/expand.png'
@@ -17,9 +17,9 @@ const DropDownMenu: FC<DropDownMenuProps> = (props) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const wrapperRef = useRef<HTMLDivElement>(null)
 
-  const handleMenu = () => {
-    setIsExpanded(!isExpanded)
-  }
+  const handleMenu = useCallback(() => {
+    setIsExpanded(x => !x)
+  }, [])
 
   useEffect(() => {
     if (isExpanded) {
@@ -39,7 +39,7 @@ const DropDownMenu: FC<DropDownMenuProps> = (props) => {
         document.removeEventListener('mousedown', handleClickOutside)
       }
     }
-  }, [wrapperRef.current])
+  }, [handleMenu, isExpanded])
 
   return (
     <div ref={wrapperRef} className={styles['parent-div']}>
@@ -48,6 +48,7 @@ const DropDownMenu: FC<DropDownMenuProps> = (props) => {
           className={styles.icon}
           src={isExpanded ? expand : collapse}
           alt={isExpanded ? 'expand' : 'collapse'}
+          size="32px"
         />
         <h1 className={styles.h1}>{title}</h1>
       </Button>
@@ -59,6 +60,7 @@ const DropDownMenu: FC<DropDownMenuProps> = (props) => {
               title={element.title}
               onClick={handleMenu}
               key={element.path}
+              className={styles['dropdown-item']}
             />
           ))}
         </div>

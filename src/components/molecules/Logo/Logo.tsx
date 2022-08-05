@@ -12,7 +12,7 @@ const Logo: FC<LogoProps> = (props) => {
 
   return (
     <div className={`${styles.logo} ${className}`}>
-      <Icon src={logo} alt="logo" size={44} />
+      <Icon src={logo} alt="logo" size='44px' />
       <h1 className={styles.h1}>
         My Custom <br />
         <span className={styles.span}>UI Design Components</span>

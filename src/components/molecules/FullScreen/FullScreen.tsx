@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Button from '../../atoms/Button/Button'
 import fullScreen from '../../../assets/images/full_screen.png'
 import styles from './FullScreen.module.css'
+import Icon from '../../atoms/Icon/Icon'
 
 
 const FullScreen: FC<{ element?: HTMLElement }> = ({ element }) => {
@@ -24,7 +25,7 @@ const FullScreen: FC<{ element?: HTMLElement }> = ({ element }) => {
 
   return (
     <Button className={styles.button} onClick={openFullScreen}>
-      <img src={fullScreen} alt="full screen" className={styles.img} />
+      <Icon src={fullScreen} alt="full screen" className={styles.img} />
     </Button>
   )
 }

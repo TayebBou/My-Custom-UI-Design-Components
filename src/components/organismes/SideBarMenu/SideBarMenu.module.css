@@ -1,0 +1,44 @@
+.parent-div {
+  margin-bottom: 5px;
+}
+
+.menu {
+  width: 100%;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 1.5em 2em;
+}
+
+.h1 {
+  padding-left: 1em;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 350;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.icon-expand {
+  margin-left: auto;
+}
+
+.dropdown-item * {
+  color: black;
+}
+
+.dropdown-item:hover * {
+  background-color: transparent;
+  font-weight: 400;
+}
+
+.dropdown-item {
+  display: flex;
+  padding: 0.3em 2em;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #efefef;
+}
