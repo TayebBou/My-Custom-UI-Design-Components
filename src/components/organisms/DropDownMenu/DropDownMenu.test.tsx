@@ -5,16 +5,16 @@ import { BrowserRouter as Router } from 'react-router-dom'
 describe('DropDownMenu component', () => {
     const options = [
         {
-          path: '/organismes/BigImageSlider',
+          path: '/organisms/BigImageSlider',
           title: 'BigImageSlider',
         },
         {
-          path: '/organismes/ImageSlider',
+          path: '/organisms/ImageSlider',
           title: 'ImageSlider',
         },
       ]
     beforeEach(() =>{
-        render(<Router><DropDownMenu title="UI Organismes" options={options} /></Router>)
+        render(<Router><DropDownMenu title="UI Organisms" options={options} /></Router>)
     })
   test('when user click on the DropDownMenu a menu with all options appear in UI', () => {
     

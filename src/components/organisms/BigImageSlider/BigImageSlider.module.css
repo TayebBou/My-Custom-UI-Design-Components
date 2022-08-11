@@ -9,6 +9,7 @@
 
 .fullscreen {
   max-width: 40em;
+  margin: auto;
 }
 
 .slider-button {

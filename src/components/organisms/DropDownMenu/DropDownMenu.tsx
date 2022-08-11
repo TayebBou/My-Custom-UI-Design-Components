@@ -7,7 +7,7 @@ import styles from './DropDownMenu.module.css'
 import DropDownItem from '../../molecules/DropDownItem/DropDownItem'
 
 type DropDownMenuProps = {
-  options: { path: string; title: string }[]
+  options: { path: string; title: string, src?: string, alt?: string }[]
   title: string
   className?: string
 }

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styles from './App.module.css'
-import NavBarSample from './components/organismes/NavBarSample/NavBarSample'
+import NavBarSample from './components/samples/organisms/NavBarSample/NavBarSample'
 import AppRoutes from './routes'
 import { BrowserRouter as Router } from 'react-router-dom'
 

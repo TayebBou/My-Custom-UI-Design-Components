@@ -4,10 +4,16 @@ import fullScreen from '../../../assets/images/full_screen.png'
 import styles from './FullScreen.module.css'
 import Icon from '../../atoms/Icon/Icon'
 
+type FullScreenProps = {
+  element?: HTMLElement
+  className?: string
+}
 
-const FullScreen: FC<{ element?: HTMLElement }> = ({ element }) => {
+const FullScreen: FC<FullScreenProps> = (props) => {
 
-  const openFullScreen = () => {
+  const { element, className } = props
+
+  const switchFullScreen = () => {
     if(element) {
       if (!document.fullscreenElement) {
         element.requestFullscreen()
@@ -24,10 +30,14 @@ const FullScreen: FC<{ element?: HTMLElement }> = ({ element }) => {
   }
 
   return (
-    <Button className={styles.button} onClick={openFullScreen}>
+    <Button className={styles.button + ' ' + className} onClick={switchFullScreen}>
       <Icon src={fullScreen} alt="full screen" className={styles.img} />
     </Button>
   )
+}
+
+FullScreen.defaultProps = {
+  className: ''
 }
 
 export default FullScreen

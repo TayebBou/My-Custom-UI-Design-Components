@@ -1,0 +1,85 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  width: 46%;
+  z-index: 1000;
+  left: -46%;
+  background-color: white;
+  animation: appear 0.5s forwards;
+}
+
+.out {
+  animation: disappear 0.5s forwards;
+}
+
+.close-button {
+  background-color: transparent;
+  border: 1px solid #6bb6f0;
+  border-radius: 5px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
+
+.close-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.close-icon {
+  align-self: center;
+  margin: auto;
+}
+
+.sidebar-header {
+  padding: 2em 60px 1em 40px;
+  margin-bottom: 2em;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 750px) {
+  .sidebar {
+    width: 50%;
+    left: -50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 390px;
+    left: -390px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    width: 90%;
+    left: -90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .sidebar {
+    width: 95%;
+    left: -95%;
+  }
+}

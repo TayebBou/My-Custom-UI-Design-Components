@@ -9,13 +9,15 @@ import DropDownItem from '../../molecules/DropDownItem/DropDownItem'
 type SideBarMenuProps = {
   options: { path: string; title: string, src?: string, alt?: string }[]
   title: string
+  onClose: () => void
   className?: string
   src?: string
   alt?: string
+  
 }
 
 const SideBarMenu: FC<SideBarMenuProps> = (props) => {
-  const { options, title, className, src, alt } = props
+  const { options, title, className, src, alt, onClose } = props
   const [isExpanded, setIsExpanded] = useState(false)
 
   const handleMenu = useCallback(() => {
@@ -48,6 +50,7 @@ const SideBarMenu: FC<SideBarMenuProps> = (props) => {
               className={styles['dropdown-item']}
               src={element.src}
               alt={element.alt}
+              onClick={onClose}
             />
           ))}
         </>

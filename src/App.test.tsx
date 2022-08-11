@@ -1,6 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-});
+describe('App component', () => {
+  test('renders logo', () => {
+    // Arrange
+    render(<App />);
+    const logo = screen.getByAltText('logo')
+    // Assert
+    expect(logo).toBeInTheDocument()
+  });
+})
+

@@ -2,7 +2,7 @@
 
 # LIVE HERE : https://
 
-My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organismes to reuse them in other ReactJS projects.
+My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organisms to reuse them in other ReactJS projects.
 Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / test coverage / CRA / CSS / ESLint.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
