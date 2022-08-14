@@ -7,39 +7,64 @@ import styles from './DropDownMenu.module.css'
 import DropDownItem from '../../molecules/DropDownItem/DropDownItem'
 
 type DropDownMenuProps = {
-  options: { path: string; title: string, src?: string, alt?: string }[]
+  options: { path: string; title: string; src?: string; alt?: string }[]
   title: string
   className?: string
+  onClick?: (display: boolean) => void
 }
 
 const DropDownMenu: FC<DropDownMenuProps> = (props) => {
-  const { options, title, className } = props
+  const { options, title, className, onClick } = props
   const [isExpanded, setIsExpanded] = useState(false)
   const wrapperRef = useRef<HTMLDivElement>(null)
+  const timeout = useRef<NodeJS.Timeout | null>(null)
+  const [isNavMenuExiting, setIsNavMenuExiting] = useState(false)
+
+  const exitMenu = useCallback(() => {
+    setIsNavMenuExiting(true)
+    onClick?.(false)
+    timeout.current = setTimeout(() => {
+      setIsNavMenuExiting(false)
+      setIsExpanded(false)
+    }, 150)
+  }, [onClick])
 
   const handleMenu = useCallback(() => {
-    setIsExpanded(x => !x)
-  }, [])
+    if (isExpanded) {
+      exitMenu()
+    } else {
+      setIsExpanded(true)
+      onClick?.(true)
+    }
+  }, [onClick, isExpanded, exitMenu])
+
+  const handleClickOutside = useCallback(
+    (event: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
+        exitMenu()
+      }
+    },
+    [exitMenu],
+  )
 
   useEffect(() => {
     if (isExpanded) {
-      const handleClickOutside = (event: MouseEvent) => {
-        if (
-          wrapperRef.current &&
-          !wrapperRef.current.contains(event.target as Node)
-        ) {
-          handleMenu()
-        }
-      }
       // Bind the event listener
       document.addEventListener('mousedown', handleClickOutside)
-
       return () => {
         // Unbind the event listener on clean up
         document.removeEventListener('mousedown', handleClickOutside)
       }
     }
-  }, [handleMenu, isExpanded])
+    return () => {
+      if (timeout.current !== null) {
+        clearTimeout(timeout.current)
+      }
+    }
+  }, [isExpanded, handleClickOutside])
 
   return (
     <div ref={wrapperRef} className={styles['parent-div']}>
@@ -52,19 +77,23 @@ const DropDownMenu: FC<DropDownMenuProps> = (props) => {
         />
         <h1 className={styles.h1}>{title}</h1>
       </Button>
-      {isExpanded ? (
-        <div className={styles['dropdown-menu']}>
+      {isExpanded && (
+        <div
+          className={
+            styles['dropdown-menu'] + ' ' + (isNavMenuExiting ? styles.out : '')
+          }
+        >
           {options.map((element) => (
             <DropDownItem
               path={element.path}
               title={element.title}
-              onClick={handleMenu}
+              onClick={exitMenu}
               key={element.path}
               className={styles['dropdown-item']}
             />
           ))}
         </div>
-      ) : null}
+      )}
     </div>
   )
 }

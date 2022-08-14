@@ -1,4 +1,11 @@
+.parent-div {
+    margin-top: 3em;
+    display: inline-block;
+}
+
 .hamburger {
+    display: block;
+    margin: 1em auto;
     height: 44px;
     background-color: transparent;
     border: 1px solid black;

@@ -5,6 +5,8 @@ const initialState: INavBarStates = {
   isSmallScreen: false,
   displaySide: false,
   closeSideBar: false,
+  isNavMenuExpanded: false,
+  isNavMenuExiting: false
 }
 
 const navBarSlice = createSlice({
@@ -20,19 +22,25 @@ const navBarSlice = createSlice({
       }
     },
     setDisplaySide(state: INavBarStates, action) {
-        state.displaySide = action.payload
+      state.displaySide = action.payload
     },
     setCloseSideBar(state: INavBarStates, action) {
-        state.closeSideBar = action.payload
+      state.closeSideBar = action.payload
     },
     switchSideBar(state: INavBarStates) {
-        if(state.displaySide) {
-            state.closeSideBar = true
-        } else {
-            state.displaySide = true
-            state.closeSideBar = false
-        }
-    }
+      if (state.displaySide) {
+        state.closeSideBar = true
+      } else {
+        state.displaySide = true
+        state.closeSideBar = false
+      }
+    },
+    switchFontBlack(state: INavBarStates) {
+      state.isNavMenuExpanded = !state.isNavMenuExpanded
+    },
+    switchIsNavMenuExiting(state: INavBarStates) {
+      state.isNavMenuExiting = !state.isNavMenuExiting
+    },
   },
 })
 
