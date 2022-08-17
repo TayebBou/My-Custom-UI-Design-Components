@@ -3,9 +3,10 @@
 # LIVE HERE : https://
 
 My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organisms to reuse them in other ReactJS projects.
-Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / test coverage / CRA / CSS / ESLint.
+Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / Redux Toolkit / test coverage / CRA / CSS / ESLint.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+All screen size are handled, working in all browsers.
 
 For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
 
@@ -57,6 +58,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn coverage`
 
 Fetch the jest test coverage of the react app.
+
+Image Here
 
 ## Learn More
 

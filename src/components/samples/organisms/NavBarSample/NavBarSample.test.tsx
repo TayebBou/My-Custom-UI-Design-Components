@@ -1,14 +1,45 @@
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import { fireEvent, screen, waitFor, within } from '@testing-library/react'
+import { renderWithProviders } from '../../../../utils/test-utils'
 import { act } from 'react-dom/test-utils'
 import { BrowserRouter as Router } from 'react-router-dom'
 import NavBarSample from './NavBarSample'
+import store from '../../../../config/store'
 
 describe('NavBarSample component', () => {
   beforeEach(() => {
     // Arrange
-    render(<Router><NavBarSample /></Router>)
+    renderWithProviders(<Router><NavBarSample /></Router>)
   })
-
+  test('when user click on navBar Menu the options and a black font are invoked in the document', async () => {
+    const navMenu = screen.getByText('UI Atoms')
+    // Act
+    fireEvent.click(navMenu)
+    const blackFont = document.body.getElementsByClassName('black-font')[0]    
+    const navMenuOption = screen.getByText('Icon')
+    // Assert
+    expect(navMenuOption).toBeInTheDocument()
+    expect(blackFont).toBeInTheDocument()
+    // set back store isNavMenuExpanded state to false
+    fireEvent.click(navMenu)
+    await waitFor(() => {
+      expect(store.getState().navBar.isNavMenuExpanded).toBeFalsy()
+    })
+  })
+  test('when user click everywhere else the options and the black font are removed from the dom', async () => {
+    const navMenu = screen.getByText('UI Atoms')
+    // Act
+    fireEvent.click(navMenu)
+    const blackFont = document.body.getElementsByClassName('black-font')[0]    
+    fireEvent.mouseDown(document.body)
+    const navMenuOption = screen.getByText('Icon')
+    // Assert
+    expect(blackFont.getAttribute('class')).toBe('black-font out')
+    await waitFor(() => {
+      expect(navMenuOption).not.toBeInTheDocument()
+      expect(blackFont).not.toBeInTheDocument()
+      expect(store.getState().navBar.isNavMenuExiting).toBeFalsy()
+    })
+  })
   test('if window innerwidth is greater than or equal 900px the navMenu is invoked and there is no hamburger button for sideBar', () => {
     const navMenu = screen.getByText('UI Organisms')
     const hamburger = screen.queryByAltText('hamburger icon')
@@ -17,14 +48,12 @@ describe('NavBarSample component', () => {
     expect(navMenu).toBeInTheDocument()
     expect(hamburger).not.toBeInTheDocument()
   })
-
   test('if window innerwidth is under 900px the hamburger button for sideBar is invoked in the DOM and there is no navMenu', () => {
     window.innerWidth = 899
     // Act
     act(() => {
         global.dispatchEvent(new Event('resize'))
     })
-
     const navMenu = screen.queryByText('UI Organisms')
     const hamburger = screen.getByAltText('hamburger icon')
     // Assert

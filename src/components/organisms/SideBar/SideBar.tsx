@@ -14,13 +14,15 @@ const SideBar: FC<SideBarProps> = (props) => {
   const { children, onClose, closeSideBar } = props
   const [isClosing, setIsClosing] = useState(false)
   const [isFontClosing, setIsFontClosing] = useState(false)
+  const [isSideBarOpen, setIsSideBarOpen] = useState(true)
   const timeout1 = useRef<NodeJS.Timeout | null>(null)
   const timeout2 = useRef<NodeJS.Timeout | null>(null)
 
   const handleClose = useCallback(() => {
     setIsFontClosing(true)
+    setIsClosing(true)
     timeout1.current = setTimeout(() => {
-      setIsClosing(true)
+      setIsSideBarOpen(false)
     }, 170)
     timeout2.current = setTimeout(() => {
       onClose()
@@ -56,7 +58,7 @@ const SideBar: FC<SideBarProps> = (props) => {
         </div>
         {children}
       </div>
-      {!isClosing && (
+      {isSideBarOpen && (
         <div className={styles['black-font'] + ' ' + (isFontClosing ? styles['out-black'] : '')} onClick={handleClose} />
       )}
     </>
