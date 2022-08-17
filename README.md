@@ -10,7 +10,7 @@ All screen size are handled, working in all browsers.
 
 For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
 
-Image Here
+![screencapture-localhost-3000-organisms-ImageSlider-2022-08-17-17_42_17](https://user-images.githubusercontent.com/52780772/185183927-b99536cb-42ef-45da-a349-7652f45c66ce.png)
 
 ## How to run
 
@@ -38,7 +38,7 @@ You will also see any lint errors in the console.
 
 ### You can start using the application with all its features
 
-Image Here
+![screencapture-localhost-3000-organisms-ImageSlider-2022-08-17-17_44_35](https://user-images.githubusercontent.com/52780772/185183828-f6d2c363-c9de-42d2-810a-5e929c0d9002.png)
 
 ### `yarn test`
 
@@ -57,9 +57,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn coverage`
 
-Fetch the jest test coverage of the react app.
+Display the jest test coverage of the react app.
 
-Image Here
+![test_coverage](https://user-images.githubusercontent.com/52780772/185182899-60f60214-7074-49c6-b58f-cf8668229010.PNG)
 
 ## Learn More
 
