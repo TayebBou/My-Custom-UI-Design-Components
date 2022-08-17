@@ -1,0 +1,14 @@
+.h2 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+    font-weight: 350;
+}
+.h2:hover {
+    font-weight: 400;
+    background-color: #f8f8f8;
+}
+
+.link {
+    text-decoration: none;
+}

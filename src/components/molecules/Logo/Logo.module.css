@@ -1,0 +1,23 @@
+.logo {
+    display: inline-flex;
+    font-size: 0.5em;
+    text-decoration: none;
+}
+
+.h1 {
+    font-weight: 350;
+    margin: 0;
+    padding-left: 0.8em;
+    color: white;
+    user-select: none;
+}
+
+.span {
+    font-weight: 350;
+}
+
+@media (max-width: 600px) {
+    .h1 {
+        display: none;
+    }
+}

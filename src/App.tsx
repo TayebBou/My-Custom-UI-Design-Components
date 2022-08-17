@@ -1,11 +1,18 @@
-import { FC } from 'react';
-import styles from './App.module.css';
+import { FC } from 'react'
+import styles from './App.module.css'
+import NavBarSample from './components/samples/organisms/NavBarSample/NavBarSample'
+import AppRoutes from './routes'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-const App:FC = () => {
+const App: FC = () => {
   return (
-    <div className={styles.app}>
-    </div>
-  );
+    <Router>
+      <NavBarSample />
+      <div className={styles.app}>
+        <AppRoutes />
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App

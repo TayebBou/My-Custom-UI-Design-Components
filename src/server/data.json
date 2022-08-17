@@ -1,0 +1,58 @@
+{
+  "photos": [
+    {
+      "id": "E40012456",
+      "label": "Extérieur",
+      "photos": [
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza1-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza1-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza2-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza2-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza3-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/ibiza/ibiza3-vignette.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "F40012456",
+      "label": "Extérieur",
+      "photos": [
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur1-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur1-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur2-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur2-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur3-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/captur/captur3-vignette.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "G40012456",
+      "label": "Extérieur",
+      "photos": [
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i81-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i81-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i82-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i82-vignette.jpeg"
+        },
+        {
+          "url_full": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i83-full.jpeg",
+          "url_vignette": "https://glc-codingtest.s3.eu-west-1.amazonaws.com/img-vo/i8/i83-vignette.jpeg"
+        }
+      ]
+    }
+  ]
+}
