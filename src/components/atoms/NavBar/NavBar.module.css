@@ -1,0 +1,8 @@
+.navbar{
+    position: relative;
+    top: 0;
+    width: calc(100% - 90px);
+    z-index: 499;
+    padding: 16px 60px 16px 30px;
+    display: flex;
+}

@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  padding: 3em;
+  margin: 3em auto;
 }
 
 @media (orientation: portrait) {

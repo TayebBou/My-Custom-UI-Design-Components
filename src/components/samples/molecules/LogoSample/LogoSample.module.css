@@ -1,0 +1,8 @@
+.logo * {
+    color: black;
+    text-align: left;
+}
+
+.logo {
+    margin-top: 3em;
+}

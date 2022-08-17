@@ -1,0 +1,14 @@
+.fullscreen {
+    position: relative;
+    margin-top: 3em;
+}
+
+.fullscreen:hover {
+    transform: scale(1.09);
+    transition: transform 0.2s;
+}
+
+.fullscreen:active {
+    transform: scale(1.04);
+    transition: transform 0.1s;
+}

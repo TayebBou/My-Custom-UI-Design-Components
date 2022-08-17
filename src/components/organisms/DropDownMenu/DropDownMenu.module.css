@@ -1,0 +1,59 @@
+.parent-div {
+  display: flex;
+}
+
+.menu {
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 1.3em;
+  color: white;
+  font-weight: 350;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.icon {
+  filter: invert(100%);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 64px;
+  background-color: white;
+  padding: 0.3em;
+  border-radius: 6px;
+  border: solid 1px #20abde;
+  animation: appear 0.15s linear forwards;
+  transform-origin: top;
+}
+
+.dropdown-item {
+  color: #5e9ed0;
+}
+
+.out {
+  animation: disappear 0.15s linear forwards;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
