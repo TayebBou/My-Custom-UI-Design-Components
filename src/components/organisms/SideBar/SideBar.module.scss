@@ -1,3 +1,5 @@
+@import "../../../global_style_settings/colors";
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -16,7 +18,7 @@
 
 .close-button {
   background-color: transparent;
-  border: 1px solid #6bb6f0;
+  border: 1px solid $primaryColor;
   border-radius: 5px;
   width: 44px;
   height: 44px;

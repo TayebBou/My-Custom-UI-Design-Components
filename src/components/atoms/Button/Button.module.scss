@@ -1,0 +1,15 @@
+@import "../../../global_style_settings/_fonts.scss";
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: {
+    family: $textFont;
+  }
+}
+
+.button:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}

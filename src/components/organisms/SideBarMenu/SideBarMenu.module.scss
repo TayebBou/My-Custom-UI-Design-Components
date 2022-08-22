@@ -24,13 +24,17 @@
   margin-left: auto;
 }
 
-.dropdown-item * {
-  color: black;
+.dropdown-item {
+  h2 {
+    color: black;
+  }
 }
 
-.dropdown-item:hover * {
-  background-color: transparent;
-  font-weight: 400;
+.dropdown-item:hover {
+  h2 {
+    background-color: transparent;
+    font-weight: 400;
+  }
 }
 
 .dropdown-item {

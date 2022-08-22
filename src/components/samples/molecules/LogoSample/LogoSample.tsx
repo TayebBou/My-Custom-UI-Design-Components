@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Logo from "../../../molecules/Logo/Logo";
-import styles from './LogoSample.module.css'
+import styles from './LogoSample.module.scss'
 
 const LogoSample: FC = () => {
     return (

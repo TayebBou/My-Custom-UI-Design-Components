@@ -1,7 +1,7 @@
 import { FC, useCallback, useState } from 'react'
 import Button from '../../atoms/Button/Button'
 import Icon from '../../atoms/Icon/Icon'
-import styles from './SideBarMenu.module.css'
+import styles from './SideBarMenu.module.scss'
 import expand from '../../../assets/images/expand.png'
 import collapse from '../../../assets/images/next.png'
 import DropDownItem from '../../molecules/DropDownItem/DropDownItem'
