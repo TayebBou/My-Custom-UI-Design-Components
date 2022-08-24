@@ -1,5 +1,6 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import Modal from "./Modal"
+import renderer from 'react-test-renderer'
 
 describe('Modal component', () => {
     let onClose: jest.Mock<any, any>;
@@ -9,7 +10,11 @@ describe('Modal component', () => {
         onClose = jest.fn()
         rerender = render(<Modal onDisplay={true} onClose={onClose}><p>Sample modal</p></Modal>).rerender
     })
-
+    test('matches the snapshot', () => {
+        const tree = renderer.create(<Modal onDisplay={true} onClose={onClose}><p>Sample modal</p></Modal>).toJSON()
+        // Assert
+        expect(tree).toMatchSnapshot()
+    })
     test('the modal is rendred on the screen', () => {
         const text = screen.getByText('Sample modal')
         // Assert
