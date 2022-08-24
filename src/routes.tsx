@@ -10,6 +10,7 @@ import LogoSample from "./components/samples/molecules/LogoSample/LogoSample";
 import FullScreenSample from "./components/samples/molecules/FullScreenSample/FullScreenSample";
 import SideBarSample from "./components/samples/organisms/SideBarSample/SideBarSample";
 import RedirectingToNavBar from "./components/samples/atoms/RedirectingToNavBar/RedirectingToNavBar";
+import ModalSample from "./components/samples/organisms/ModalSample/ModalSample";
 
 const AppRoutes: FC = () => {
     return (
@@ -22,6 +23,7 @@ const AppRoutes: FC = () => {
             <Route path="/organisms/ImageSlider" element={<ImageSlider photos={data.photos as IPhoto[]} />} />
             <Route path="/organisms/BigImageSlider" element={<BigImageSlider photos={data.photos as IPhoto[]} />} />
             <Route path="/organisms/SideBar" element={<SideBarSample />} />
+            <Route path="/organisms/Modal" element={<ModalSample />} />
             <Route path="/*" element={<Navigate to={'/organisms/ImageSlider'} />} />
         </Routes>
     )

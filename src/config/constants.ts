@@ -11,6 +11,7 @@ export const IMAGES = {
   fullScreen: require('../assets/images/fullscreen.png'),
   sideBar: require('../assets/images/sidebar.png'),
   navBar: require('../assets/images/navbar.png'),
+  modal: require('../assets/images/modal.png'),
 }
 
 export const OPTIONS_ORGANISMS = [
@@ -31,6 +32,12 @@ export const OPTIONS_ORGANISMS = [
     title: 'SideBar',
     src: IMAGES.sideBar,
     alt: 'SideBar',
+  },
+  {
+    path: '/organisms/Modal',
+    title: 'Modal',
+    src: IMAGES.modal,
+    alt: 'Modal',
   },
 ]
 
