@@ -3,7 +3,7 @@
 # LIVE HERE : https://my-custom-ui-design-components.web.app
 
 My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organisms to reuse them in other ReactJS projects.
-Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / Redux Toolkit / test coverage / CRA / CSS / ESLint.
+Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / Redux Toolkit / test coverage / CRA / CSS / Sass / ESLint.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 All screen size are handled, working in all browsers.

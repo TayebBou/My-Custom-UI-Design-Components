@@ -1,6 +1,8 @@
+@import "../../../../global_style_settings/colors";
+
 .button {
     background-color: transparent;
-    border: solid 1px #6bb6f0;
+    border: solid 1px $primaryColor;
     border-radius: 5px;
     color: #1391f1;
     padding: 1em;

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Button from "../../../atoms/Button/Button";
-import styles from './ButtonSample.module.css'
+import styles from './ButtonSample.module.scss'
 
 const ButtonSample:FC = () => {
     return (

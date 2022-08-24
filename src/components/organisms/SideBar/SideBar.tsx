@@ -1,7 +1,7 @@
 import { FC, useCallback, useEffect, useRef, useState } from 'react'
 import Button from '../../atoms/Button/Button'
 import Icon from '../../atoms/Icon/Icon'
-import styles from './SideBar.module.css'
+import styles from './SideBar.module.scss'
 import close from '../../../assets/images/cancel.png'
 
 type SideBarProps = {

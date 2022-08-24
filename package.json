@@ -1,6 +1,6 @@
 {
   "name": "my-custom-ui-design-components",
-  "version": "0.3.16",
+  "version": "0.3.19",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -148,5 +148,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.54.5"
   }
 }
