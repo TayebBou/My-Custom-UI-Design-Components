@@ -1,8 +1,8 @@
-import { FC } from 'react'
-import styles from './App.module.css'
-import NavBarSample from './components/samples/organisms/NavBarSample/NavBarSample'
-import AppRoutes from './routes'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { FC } from "react";
+import styles from "./App.module.scss";
+import NavBarSample from "./components/samples/organisms/NavBarSample/NavBarSample";
+import AppRoutes from "./routes";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const App: FC = () => {
   return (
@@ -12,7 +12,7 @@ const App: FC = () => {
         <AppRoutes />
       </div>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;

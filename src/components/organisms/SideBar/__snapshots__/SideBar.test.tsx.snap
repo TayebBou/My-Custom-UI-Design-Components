@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar component should render correctly with props 1`] = `
+<div>
+  <div
+    class="sidebar out"
+  >
+    <div
+      class="sidebar-header"
+    >
+      <button
+        class="button close-button"
+        type="button"
+      >
+        <img
+          alt="close icon"
+          class="close-icon"
+          src="cancel.png"
+          style="width: 26px; height: 26px; filter: none;"
+        />
+      </button>
+    </div>
+    children
+  </div>
+  <div
+    class="black-font out-black"
+  />
+</div>
+`;
+
+exports[`SideBar component should render correctly without props 1`] = `
+<div>
+  <div
+    class="sidebar "
+  >
+    <div
+      class="sidebar-header"
+    >
+      <button
+        class="button close-button"
+        type="button"
+      >
+        <img
+          alt="close icon"
+          class="close-icon"
+          src="cancel.png"
+          style="width: 26px; height: 26px; filter: none;"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="black-font "
+  />
+</div>
+`;

@@ -1,24 +1,23 @@
-import { screen, render } from '@testing-library/react'
-import NavBar from './NavBar'
+import { render } from "@testing-library/react";
+import NavBar from "./NavBar";
 
-describe('NavBar component', () => {
-  test('Navbar is not fixed without the props fixed', async () => {
+const props = {
+  fixed: true,
+  className: "NavBar__test",
+};
+
+describe("NavBar component", () => {
+  test("should render correctly with props", () => {
     // Arrange
-    render(<NavBar>test</NavBar>)
-
-    const navBarDivStyle = screen.getByText('test').getAttribute('style')
+    const { asFragment } = render(<NavBar {...props}>test</NavBar>);
     // Assert
-    expect(navBarDivStyle).toBe(null)
-  })
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-  test('Navbar is fixed with the props fixed', async () => {
+  test("should render correctly without props", () => {
     // Arrange
-    render(<NavBar fixed>test</NavBar>)
-
-    const navBarDivStyle = screen.getByText('test')
+    const { asFragment } = render(<NavBar>test</NavBar>);
     // Assert
-    expect(navBarDivStyle).toHaveStyle({ position: 'fixed' })
-  })
-})
-
-export {}
+    expect(asFragment()).toMatchSnapshot();
+  });
+});

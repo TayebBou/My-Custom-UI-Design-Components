@@ -1,44 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal component matches the snapshot 1`] = `
-Array [
+exports[`Modal component should render correctly with props 1`] = `
+<div>
   <div
-    className="modal  "
+    class="modal Modal__test "
   >
     <div
-      className="header"
+      class="header"
     >
-      <h1 />
+      <h1>
+        Test Modal Title
+      </h1>
       <button
-        className="button close-button"
-        disabled={false}
-        onClick={[Function]}
+        class="button close-button"
         type="button"
       >
         <img
           alt="close icon"
-          className="icon close-icon"
+          class="close-icon"
           src="cancel.png"
-          style={
-            Object {
-              "height": "17px",
-              "width": "17px",
-            }
-          }
+          style="width: 17px; height: 17px; filter: none;"
         />
       </button>
     </div>
     <div
-      className="body"
+      class="body"
     >
       <p>
-        Sample modal
+        This is the modal content.
       </p>
     </div>
-  </div>,
+  </div>
   <div
-    className="black-font "
-    onClick={[Function]}
-  />,
-]
+    class="black-font "
+    data-testid="black-font"
+  />
+</div>
 `;
+
+exports[`Modal component should render correctly without props 1`] = `<div />`;

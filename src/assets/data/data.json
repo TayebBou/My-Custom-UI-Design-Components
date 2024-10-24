@@ -1,0 +1,100 @@
+{
+  "photos": [
+    {
+      "id": "AUDI_R8",
+      "label": "Extérieur et intérieur",
+      "photos": [
+        {
+          "url_full": "/images/AUDI_R8_1.webp",
+          "url_vignette": "/images/AUDI_R8_1.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_2.webp",
+          "url_vignette": "/images/AUDI_R8_2.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_3.webp",
+          "url_vignette": "/images/AUDI_R8_3.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_4.webp",
+          "url_vignette": "/images/AUDI_R8_4.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_5.webp",
+          "url_vignette": "/images/AUDI_R8_5.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_6.webp",
+          "url_vignette": "/images/AUDI_R8_6.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_7.webp",
+          "url_vignette": "/images/AUDI_R8_7.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_8.webp",
+          "url_vignette": "/images/AUDI_R8_8.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_9.webp",
+          "url_vignette": "/images/AUDI_R8_9.webp"
+        },
+        {
+          "url_full": "/images/AUDI_R8_10.webp",
+          "url_vignette": "/images/AUDI_R8_10.webp"
+        }
+      ]
+    },
+    {
+      "id": "MERCCC",
+      "label": "Extérieur et intérieur",
+      "photos": [
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_1.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_1.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_2.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_2.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_3.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_3.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_4.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_4.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_5.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_5.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_6.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_6.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_7.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_7.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_8.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_8.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_9.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_9.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_10.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_10.webp"
+        },
+        {
+          "url_full": "/images/MERCEDES_CLASSE_C_11.webp",
+          "url_vignette": "/images/MERCEDES_CLASSE_C_11.webp"
+        }
+      ]
+    }
+  ]
+}

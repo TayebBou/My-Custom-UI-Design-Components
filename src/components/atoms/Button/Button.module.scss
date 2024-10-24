@@ -10,6 +10,8 @@
 }
 
 .button:disabled {
-  opacity: 0.2;
-  cursor: auto;
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+  transition: none !important;
 }

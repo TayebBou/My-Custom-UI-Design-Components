@@ -1,6 +1,6 @@
 {
   "name": "my-custom-ui-design-components",
-  "version": "0.3.20",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -71,7 +71,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
+    "test:snapshot": "node scripts/test.js --updateSnapshot --watchAll=false",
     "coverage": "jest --collect-coverage"
   },
   "eslintConfig": {

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBarMenu component should render correctly with props 1`] = `
+<div>
+  <div
+    class="parent-div"
+  >
+    <button
+      class="button menu SideBarMenu__test"
+      type="button"
+    >
+      <img
+        alt="organism"
+        class=""
+        src="organism.png"
+        style="width: 32px; height: 32px; filter: none;"
+      />
+      <h1
+        class="h1"
+      >
+        UI Organisms
+      </h1>
+      <img
+        alt="collapse"
+        class="icon-expand"
+        src="next.png"
+        style="width: 32px; height: 32px; filter: none;"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`SideBarMenu component should render correctly without props 1`] = `
+<div>
+  <div
+    class="parent-div"
+  >
+    <button
+      class="button menu "
+      type="button"
+    >
+      <h1
+        class="h1"
+      />
+      <img
+        alt="collapse"
+        class="icon-expand"
+        src="next.png"
+        style="width: 32px; height: 32px; filter: none;"
+      />
+    </button>
+  </div>
+</div>
+`;

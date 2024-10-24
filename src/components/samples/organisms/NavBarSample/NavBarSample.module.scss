@@ -21,10 +21,6 @@
   margin-right: auto;
 }
 
-.icon {
-  filter: invert(100%);
-}
-
 .hamburger:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
@@ -42,7 +38,7 @@
 }
 
 .out {
-    animation: disappear 0.17s linear forwards;
+  animation: disappear 0.17s linear forwards;
 }
 
 @keyframes appear {

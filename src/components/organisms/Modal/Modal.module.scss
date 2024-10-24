@@ -1,4 +1,4 @@
-@import '../../../global_style_settings/colors';
+@import "../../../global_style_settings/colors";
 
 .modal {
   position: fixed;
@@ -12,10 +12,8 @@
   top: 35vh;
   min-height: 30vh;
   width: 50%;
-}
 
-@media (orientation:portrait) {
-  .modal {
+  @media (orientation: portrait) {
     left: 5%;
     width: 90%;
   }
@@ -57,7 +55,7 @@
 }
 
 .body::before {
-  content: '';
+  content: "";
   display: block;
   width: 97%;
   margin: auto;
