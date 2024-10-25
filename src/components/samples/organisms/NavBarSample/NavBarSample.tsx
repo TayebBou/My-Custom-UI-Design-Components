@@ -6,7 +6,7 @@ import Logo from "../../../molecules/Logo/Logo";
 import DropDownMenu from "../../../organisms/DropDownMenu/DropDownMenu";
 import styles from "./NavBarSample.module.scss";
 import SideBar from "../../../organisms/SideBar/SideBar";
-import SideBarMenu from "../../../organisms/SideBarMenu/SideBarMenu";
+import SideBarMenu from "../../../organisms/SideBar/SideBarMenu/SideBarMenu";
 import { useDispatch, useSelector } from "react-redux";
 import {
   IMAGES,

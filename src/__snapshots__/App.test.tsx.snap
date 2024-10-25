@@ -105,57 +105,57 @@ exports[`App component should render correctly 1`] = `
           data-testid="bigImagesDiv"
         >
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_1.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_2.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_3.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_4.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_5.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_6.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_7.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_8.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_9.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_10.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
           <img
-            alt="car outside"
+            alt="full-size"
             src="/images/MERCEDES_CLASSE_C_11.webp"
             style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
           />
@@ -207,59 +207,59 @@ exports[`App component should render correctly 1`] = `
             data-testid="miniImagesDiv"
           >
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_1.webp"
-              style="max-width: 92px; margin: 1.5em 0px; outline: solid 0.2em white; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; outline: solid 0.2em white; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_2.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_3.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_4.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_5.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_6.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_7.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_8.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_9.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_10.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
             <img
-              alt="car outside vignette"
+              alt="thumbnail"
               src="/images/MERCEDES_CLASSE_C_11.webp"
-              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px);"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
             />
           </div>
           <button

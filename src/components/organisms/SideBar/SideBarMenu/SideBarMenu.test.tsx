@@ -2,8 +2,8 @@
 
 import { fireEvent, render, screen } from "@testing-library/react";
 import SideBarMenu from "./SideBarMenu";
-import bigImageSlider from "../../../assets/icons/bigImageSlider.png";
-import organism from "../../../assets/icons/organism.png";
+import bigImageSlider from "../../../../assets/icons/bigImageSlider.png";
+import organism from "../../../../assets/icons/organism.png";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const options = [

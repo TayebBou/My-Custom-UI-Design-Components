@@ -5,7 +5,7 @@ import styles from "./FullScreen.module.scss";
 import Icon from "../../atoms/Icon/Icon";
 
 type FullScreenProps = {
-  element?: HTMLElement;
+  element?: HTMLElement | null;
   className?: string;
 };
 

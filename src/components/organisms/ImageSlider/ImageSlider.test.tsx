@@ -12,7 +12,7 @@ describe("ImageSlider component", () => {
   test("when user click on right button the slide go to the next image", async () => {
     // Arrange
     render(<ImageSlider photos={data.photos} />);
-    const BigImages = await screen.findAllByAltText("car outside", {
+    const BigImages = await screen.findAllByAltText("full-size", {
       exact: true,
     });
     const bigImagesDiv = screen.getByTestId("bigImagesDiv");
@@ -26,10 +26,11 @@ describe("ImageSlider component", () => {
       expect(BigImages[0]).toHaveStyle({ transform: `translateX(-100%)` });
     });
   });
+
   test("when user click on left button the slide go back to the previous image", async () => {
     // Arrange
     render(<ImageSlider photos={data.photos} />);
-    const BigImages = await screen.findAllByAltText("car outside", {
+    const BigImages = await screen.findAllByAltText("full-size", {
       exact: true,
     });
     const bigImagesDiv = screen.getByTestId("bigImagesDiv");

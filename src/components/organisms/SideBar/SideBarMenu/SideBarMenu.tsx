@@ -1,10 +1,10 @@
 import { FC, useCallback, useState } from "react";
-import Button from "../../atoms/Button/Button";
-import Icon from "../../atoms/Icon/Icon";
+import Button from "../../../atoms/Button/Button";
+import Icon from "../../../atoms/Icon/Icon";
+import expand from "../../../../assets/icons/expand.png";
+import collapse from "../../../../assets/icons/next.png";
+import DropDownItem from "../../../molecules/DropDownItem/DropDownItem";
 import styles from "./SideBarMenu.module.scss";
-import expand from "../../../assets/icons/expand.png";
-import collapse from "../../../assets/icons/next.png";
-import DropDownItem from "../../molecules/DropDownItem/DropDownItem";
 
 type SideBarMenuProps = {
   options: { path: string; title: string; src?: string; alt?: string }[];
