@@ -1,26 +1,16 @@
-import { render, screen } from '@testing-library/react'
-import LogoSample from './LogoSample'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { render } from "@testing-library/react";
+import LogoSample from "./LogoSample";
+import { BrowserRouter as Router } from "react-router-dom";
 
-describe('LogoSample component', () => {
-  beforeEach(() => {
+describe("LogoSample component", () => {
+  test("should render correctly", () => {
     // Arrange
-    render(
+    const { asFragment } = render(
       <Router>
         <LogoSample />
-      </Router>,
-    )
-  })
-  test('A logo icon is rendered in the dom', () => {
-    const logoIcon = screen.getByAltText('logo')
+      </Router>
+    );
     // Assert
-    expect(logoIcon).toBeInTheDocument()
-  })
-  test('A logo text is rendered in the dom', () => {
-    const logoText = screen.getByText('UI Design Components')
-    // Assert
-    expect(logoText).toBeInTheDocument()
-  })
-})
-
-export {}
+    expect(asFragment()).toMatchSnapshot();
+  });
+});

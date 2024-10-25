@@ -1,0 +1,24 @@
+.h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  margin: 0;
+  padding: 1em;
+  font-weight: 350;
+
+  &::before {
+    content: attr(data-item-title);
+    visibility: hidden;
+    font-weight: 400;
+    height: 0;
+  }
+}
+
+.h2:hover {
+  font-weight: 400;
+  background-color: #f8f8f8;
+}
+
+.link {
+  text-decoration: none;
+}

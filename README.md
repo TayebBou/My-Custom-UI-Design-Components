@@ -3,14 +3,14 @@
 # LIVE HERE : https://my-custom-ui-design-components.web.app
 
 My-Custom-UI-Design-Components is a react app with my custom UI atoms, molecules and organisms to reuse them in other ReactJS projects.
-Technical stack : React JS / TypeScript / Atomic Design / JEST - RTL / Redux Toolkit / test coverage / CRA / CSS / Sass / ESLint.
+Technical stack : React JS / TypeScript / Sass / Atomic Design / JEST - RTL / Redux Toolkit / React Router / test coverage / CRA / ESLint / Prettier.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 All screen size are handled, working in all browsers.
 
 For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
 
-![screencapture-localhost-3000-organisms-ImageSlider-2022-08-17-17_42_17](https://user-images.githubusercontent.com/52780772/185183927-b99536cb-42ef-45da-a349-7652f45c66ce.png)
+![Capture d’écran 2024-10-25 092631](https://github.com/user-attachments/assets/98e4c9d7-39d2-48d9-878a-5436c5dc16b0)
 
 ## How to run
 
@@ -38,7 +38,7 @@ You will also see any lint errors in the console.
 
 ### You can start using the application with all its features
 
-![screencapture-localhost-3000-organisms-ImageSlider-2022-08-17-17_44_35](https://user-images.githubusercontent.com/52780772/185183828-f6d2c363-c9de-42d2-810a-5e929c0d9002.png)
+![2024-10-25_09h31_01](https://github.com/user-attachments/assets/29614eb1-d219-4bf4-aac4-efae45fdf3b1)
 
 ### `yarn test`
 
@@ -49,11 +49,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
+Generate source map is setted to false.
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information or deploy with firebase.
 
 ### `yarn coverage`
 

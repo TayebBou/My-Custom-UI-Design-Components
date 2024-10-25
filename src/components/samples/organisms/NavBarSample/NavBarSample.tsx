@@ -1,72 +1,72 @@
-import { FC, useEffect, useRef } from 'react'
-import Button from '../../../atoms/Button/Button'
-import Icon from '../../../atoms/Icon/Icon'
-import NavBar from '../../../atoms/NavBar/NavBar'
-import Logo from '../../../molecules/Logo/Logo'
-import DropDownMenu from '../../../organisms/DropDownMenu/DropDownMenu'
-import styles from './NavBarSample.module.scss'
-import SideBar from '../../../organisms/SideBar/SideBar'
-import SideBarMenu from '../../../organisms/SideBarMenu/SideBarMenu'
-import { useDispatch, useSelector } from 'react-redux'
+import { FC, useEffect, useRef } from "react";
+import Button from "../../../atoms/Button/Button";
+import Icon from "../../../atoms/Icon/Icon";
+import NavBar from "../../../atoms/NavBar/NavBar";
+import Logo from "../../../molecules/Logo/Logo";
+import DropDownMenu from "../../../organisms/DropDownMenu/DropDownMenu";
+import styles from "./NavBarSample.module.scss";
+import SideBar from "../../../organisms/SideBar/SideBar";
+import SideBarMenu from "../../../organisms/SideBar/SideBarMenu/SideBarMenu";
+import { useDispatch, useSelector } from "react-redux";
 import {
   IMAGES,
   OPTIONS_ORGANISMS,
   OPTIONS_MOLECULES,
   OPTIONS_ATOMS,
-} from '../../../../config/constants'
-import { navBarActions } from '../../../../config/stateSlices/navBarSlice'
-import { IRootState } from '../../../../shared/types/rootState.model'
+} from "../../../../config/constants";
+import { navBarActions } from "../../../../config/stateSlices/navBarSlice";
+import { IRootState } from "../../../../shared/types/rootState.model";
 
 const NavBarSample: FC = () => {
   const isSmallScreen = useSelector(
-    (state: IRootState) => state.navBar.isSmallScreen,
-  )
+    (state: IRootState) => state.navBar.isSmallScreen
+  );
   const displaySide = useSelector(
-    (state: IRootState) => state.navBar.displaySide,
-  )
+    (state: IRootState) => state.navBar.displaySide
+  );
   const closeSideBar = useSelector(
-    (state: IRootState) => state.navBar.closeSideBar,
-  )
+    (state: IRootState) => state.navBar.closeSideBar
+  );
   const isNavMenuExpanded = useSelector(
-    (state: IRootState) => state.navBar.isNavMenuExpanded,
-  )
+    (state: IRootState) => state.navBar.isNavMenuExpanded
+  );
   const isNavMenuExiting = useSelector(
-    (state: IRootState) => state.navBar.isNavMenuExiting,
-  )
-  const timeout = useRef<NodeJS.Timeout | null>(null)
-  const dispatch = useDispatch()
+    (state: IRootState) => state.navBar.isNavMenuExiting
+  );
+  const timeout = useRef<NodeJS.Timeout | null>(null);
+  const dispatch = useDispatch();
 
   const handleDropDownMenu = (display: boolean) => {
     if (!display) {
-      dispatch(navBarActions.switchIsNavMenuExiting())
+      dispatch(navBarActions.switchIsNavMenuExiting());
       timeout.current = setTimeout(() => {
-        dispatch(navBarActions.switchIsNavMenuExiting())
-        dispatch(navBarActions.switchFontBlack())
-      }, 170)
+        dispatch(navBarActions.switchIsNavMenuExiting());
+        dispatch(navBarActions.switchFontBlack());
+      }, 170);
     } else {
-      dispatch(navBarActions.switchFontBlack())
+      dispatch(navBarActions.switchFontBlack());
     }
-  }
+  };
 
   useEffect(() => {
-    const handleResize = () => dispatch(navBarActions.handleResize())
-    handleResize()
-    window.addEventListener('resize', handleResize)
+    const handleResize = () => dispatch(navBarActions.handleResize());
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize);
       if (timeout.current !== null) {
-        clearTimeout(timeout.current)
+        clearTimeout(timeout.current);
       }
-    }
-  }, [dispatch])
+    };
+  }, [dispatch]);
 
   useEffect(() => {
     if (!isNavMenuExiting) {
       if (timeout.current !== null) {
-        clearTimeout(timeout.current)
+        clearTimeout(timeout.current);
       }
     }
-  }, [isNavMenuExiting])
+  }, [isNavMenuExiting]);
 
   return (
     <>
@@ -74,7 +74,7 @@ const NavBarSample: FC = () => {
         <SideBar
           closeSideBar={closeSideBar}
           onClose={() => {
-            dispatch(navBarActions.setDisplaySide(false))
+            dispatch(navBarActions.setDisplaySide(false));
           }}
         >
           <SideBarMenu
@@ -83,7 +83,7 @@ const NavBarSample: FC = () => {
             alt="organism"
             title="UI Organisms"
             onClose={() => {
-              dispatch(navBarActions.setCloseSideBar(true))
+              dispatch(navBarActions.setCloseSideBar(true));
             }}
           />
           <SideBarMenu
@@ -92,7 +92,7 @@ const NavBarSample: FC = () => {
             alt="molecule"
             title="UI Molecules"
             onClose={() => {
-              dispatch(navBarActions.setCloseSideBar(true))
+              dispatch(navBarActions.setCloseSideBar(true));
             }}
           />
           <SideBarMenu
@@ -101,7 +101,7 @@ const NavBarSample: FC = () => {
             alt="atom"
             title="UI Atoms"
             onClose={() => {
-              dispatch(navBarActions.setCloseSideBar(true))
+              dispatch(navBarActions.setCloseSideBar(true));
             }}
           />
         </SideBar>
@@ -113,10 +113,10 @@ const NavBarSample: FC = () => {
             onClick={() => dispatch(navBarActions.switchSideBar())}
           >
             <Icon
-              className={styles.icon}
               src={IMAGES.hamburger}
               alt="hamburger icon"
               size="32px"
+              isInverted
             />
           </Button>
         )}
@@ -150,12 +150,13 @@ const NavBarSample: FC = () => {
       {isNavMenuExpanded && (
         <div
           className={
-            styles['black-font'] + ' ' + (isNavMenuExiting ? styles.out : '')
+            styles["black-font"] + " " + (isNavMenuExiting ? styles.out : "")
           }
+          data-testid="black-font"
         />
       )}
     </>
-  )
-}
+  );
+};
 
-export default NavBarSample
+export default NavBarSample;

@@ -1,32 +1,39 @@
-import { fireEvent, render, screen } from '@testing-library/react'
-import FullScreenSample from './FullScreenSample'
+import { fireEvent, render, screen } from "@testing-library/react";
+import FullScreenSample from "./FullScreenSample";
 
-describe('FullScreenSample component', () => {
-  let fullScreenButton: HTMLButtonElement
-  beforeEach(() => {
+describe("FullScreenSample component", () => {
+  test("when user clicks on fullscreen button, the requestFullscreen method for the document is called", () => {
+    // Mock
+    const mockRequestFullscreen = jest.fn();
+    const mockExitFullscreen = jest.fn();
+    // Mock the Fullscreen API
+    Object.defineProperty(document, "exitFullscreen", {
+      writable: true,
+      value: mockExitFullscreen,
+    });
+    HTMLElement.prototype.requestFullscreen = mockRequestFullscreen;
     // Arrange
-    render(<FullScreenSample />)
-    fullScreenButton = screen.getByRole('button')
-    ;(document as any).exitFullscreen = jest.fn()
-  })
-  test('when user click on fullscreen button the requestFullscreen method for the document is called', () => {
-    ;(document.firstElementChild as Element).requestFullscreen = jest.fn()
-    
+    render(<FullScreenSample />);
+    const fullScreenButton = screen.getByRole("button");
     // Act
-    fireEvent.click(fullScreenButton)
-
+    fireEvent.click(fullScreenButton);
     // Assert
-    expect(
-      (document.firstElementChild as Element).requestFullscreen,
-    ).toHaveBeenCalled()
-  })
-  test('when user click again on fullscreen button the exitFullscreen method for the document is called', () => {
-    ;(document as any).fullscreenElement = true
+    expect(mockRequestFullscreen).toHaveBeenCalled();
+  });
 
-    fireEvent.click(fullScreenButton)
-
-    expect(document.exitFullscreen).toHaveBeenCalled()
-  })
-})
-
-export {}
+  test("when user clicks again on fullscreen button, the exitFullscreen method for the document is called", () => {
+    // Arrange
+    render(<FullScreenSample />);
+    const fullScreenButton = screen.getByRole("button");
+    document.exitFullscreen = jest.fn();
+    // Mock document.fullscreenElement to simulate full screen mode
+    Object.defineProperty(document, "fullscreenElement", {
+      writable: true,
+      value: true, // Simulate fullscreen mode being active
+    });
+    // Act
+    fireEvent.click(fullScreenButton);
+    // Assert
+    expect(document.exitFullscreen).toHaveBeenCalled();
+  });
+});

@@ -1,28 +1,23 @@
-import { FC } from 'react'
-import styles from './NavBar.module.css'
+import { FC } from "react";
+import styles from "./NavBar.module.scss";
 
 type NavBarProps = {
-  children: React.ReactNode
-  fixed?: boolean
-  className?: string
-}
+  children: React.ReactNode;
+  fixed?: boolean;
+  className?: string;
+};
 
-const NavBar: FC<NavBarProps> = (props) => {
-  const { children, fixed, className } = props
+const NavBar: FC<NavBarProps> = ({
+  fixed = false,
+  className = "",
+  children,
+}) => (
+  <div
+    className={`${styles.navbar} ${className}`}
+    style={fixed ? { position: "fixed" } : {}}
+  >
+    {children}
+  </div>
+);
 
-  return (
-    <div
-      className={`${styles.navbar} ${className}`}
-      style={fixed ? { position: 'fixed' } : {}}
-    >
-      {children}
-    </div>
-  )
-}
-
-NavBar.defaultProps = {
-    fixed: false,
-    className: ''
-}
-
-export default NavBar
+export default NavBar;

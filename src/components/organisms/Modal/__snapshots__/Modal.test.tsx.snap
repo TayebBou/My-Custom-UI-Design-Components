@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component should render correctly with props 1`] = `
+<div>
+  <div
+    class="modal Modal__test "
+  >
+    <div
+      class="header"
+    >
+      <h1>
+        Test Modal Title
+      </h1>
+      <button
+        class="button close-button"
+        type="button"
+      >
+        <img
+          alt="close icon"
+          class="close-icon"
+          src="cancel.png"
+          style="width: 17px; height: 17px; filter: none;"
+        />
+      </button>
+    </div>
+    <div
+      class="body"
+    >
+      <p>
+        This is the modal content.
+      </p>
+    </div>
+  </div>
+  <div
+    class="black-font "
+    data-testid="black-font"
+  />
+</div>
+`;
+
+exports[`Modal component should render correctly without props 1`] = `<div />`;

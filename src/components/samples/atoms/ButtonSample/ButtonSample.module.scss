@@ -1,20 +1,20 @@
 @import "../../../../global_style_settings/colors";
 
 .button {
-    background-color: transparent;
-    border: solid 1px $primaryColor;
-    border-radius: 5px;
-    color: #1391f1;
-    padding: 1em;
-    margin-top: 3em;
+  background-color: transparent;
+  border: solid 1px $primaryColor;
+  border-radius: 5px;
+  color: black;
+  padding: 1em;
+  margin: 3em auto;
 }
 
 .button:hover {
-    transform: scale(1.09);
-    transition: transform 0.2s;
+  transform: scale(1.09);
+  transition: transform 0.2s;
 }
 
 .button:active {
-    transform: scale(1.04);
-    transition: transform 0.1s;
+  transform: scale(1.04);
+  transition: transform 0.1s;
 }

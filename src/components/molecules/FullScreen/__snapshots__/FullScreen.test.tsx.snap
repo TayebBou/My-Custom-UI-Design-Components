@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullScreen component should render correctly with props 1`] = `
+<DocumentFragment>
+  <button
+    class="button button FullScreen__button"
+    type="button"
+  >
+    <img
+      alt="full screen"
+      class="img"
+      src="full_screen.png"
+      style="filter: none;"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`FullScreen component should render correctly without props 1`] = `
+<DocumentFragment>
+  <button
+    class="button button "
+    type="button"
+  >
+    <img
+      alt="full screen"
+      class="img"
+      src="full_screen.png"
+      style="filter: none;"
+    />
+  </button>
+</DocumentFragment>
+`;

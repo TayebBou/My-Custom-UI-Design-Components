@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BigImageSlider component should render correctly with props 1`] = `
+<DocumentFragment>
+  <div
+    class="fullscreen"
+  >
+    <div
+      class="full-images"
+    >
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_1.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_2.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_3.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_4.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_5.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_6.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_7.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_8.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_9.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <img
+        alt="car outside"
+        src="/images/AUDI_R8_10.webp"
+        style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+      />
+      <button
+        class="button slider-button right"
+        type="button"
+      >
+        &gt;
+      </button>
+      <button
+        class="button slider-button left"
+        disabled=""
+        type="button"
+      >
+        &lt;
+      </button>
+      <span
+        class="span"
+      >
+        1 / 10
+      </span>
+      <button
+        class="button button "
+        type="button"
+      >
+        <img
+          alt="full screen"
+          class="img"
+          src="full_screen.png"
+          style="filter: none;"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

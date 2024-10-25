@@ -1,0 +1,25 @@
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #00000075;
+    padding: 0;
+    z-index: 1;
+}
+
+.button:enabled:hover {
+    background-color: #000000b0;
+}
+
+.img {
+    width: 1.7em;
+    display: flex;
+    padding: 1em;
+
+    @media (orientation: landscape) and (display-mode: fullscreen) {
+        width: 3em;
+        display: flex;
+        padding: 1.5em;
+    }
+}
+

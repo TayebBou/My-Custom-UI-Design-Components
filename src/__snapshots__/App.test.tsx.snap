@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render correctly 1`] = `
+<div>
+  <div
+    class="navbar navbar"
+  >
+    <a
+      class="logo logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        class=""
+        src="ui.png"
+        style="width: 44px; height: 44px; filter: none;"
+      />
+      <h1
+        class="h1"
+      >
+        My Custom 
+        <br />
+        <span
+          class="span"
+        >
+          UI Design Components
+        </span>
+      </h1>
+    </a>
+    <div
+      class="parent-div"
+    >
+      <button
+        class="button menu dropdownmenu"
+        type="button"
+      >
+        <img
+          alt="collapse"
+          class=""
+          src="next.png"
+          style="width: 32px; height: 32px; filter: invert(1);"
+        />
+        <h1
+          class="h1"
+        >
+          UI Organisms
+        </h1>
+      </button>
+    </div>
+    <div
+      class="parent-div"
+    >
+      <button
+        class="button menu dropdownmenu"
+        type="button"
+      >
+        <img
+          alt="collapse"
+          class=""
+          src="next.png"
+          style="width: 32px; height: 32px; filter: invert(1);"
+        />
+        <h1
+          class="h1"
+        >
+          UI Molecules
+        </h1>
+      </button>
+    </div>
+    <div
+      class="parent-div"
+    >
+      <button
+        class="button menu dropdownmenu"
+        type="button"
+      >
+        <img
+          alt="collapse"
+          class=""
+          src="next.png"
+          style="width: 32px; height: 32px; filter: invert(1);"
+        />
+        <h1
+          class="h1"
+        >
+          UI Atoms
+        </h1>
+      </button>
+    </div>
+  </div>
+  <div
+    class="app"
+  >
+    <h2>
+      ImageSlider Component
+    </h2>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="fullscreen"
+      >
+        <div
+          class="full-images"
+          data-testid="bigImagesDiv"
+        >
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_1.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_2.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_3.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_4.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_5.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_6.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_7.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_8.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_9.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_10.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <img
+            alt="full-size"
+            src="/images/MERCEDES_CLASSE_C_11.webp"
+            style="max-width: 100%; transition: 0.5s; transform: translateX(0%);"
+          />
+          <button
+            class="button slider-button right"
+            type="button"
+          >
+            &gt;
+          </button>
+          <button
+            class="button slider-button left"
+            disabled=""
+            type="button"
+          >
+            &lt;
+          </button>
+          <span
+            class="span"
+          >
+            1
+             / 
+            11
+          </span>
+          <button
+            class="button button "
+            type="button"
+          >
+            <img
+              alt="full screen"
+              class="img"
+              src="full_screen.png"
+              style="filter: none;"
+            />
+          </button>
+        </div>
+        <div
+          class="mini-images"
+          data-testid="imagesDiv"
+        >
+          <button
+            class="button slider-button"
+            disabled=""
+            type="button"
+          >
+            &lt;
+          </button>
+          <div
+            class="images"
+            data-testid="miniImagesDiv"
+          >
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_1.webp"
+              style="max-width: 92px; margin: 1.5em 0px; outline: solid 0.2em white; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_2.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_3.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_4.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_5.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_6.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_7.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_8.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_9.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_10.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+            <img
+              alt="thumbnail"
+              src="/images/MERCEDES_CLASSE_C_11.webp"
+              style="max-width: 92px; margin: 1.5em 0px; transition: transform 0.5s; transform: translateX(0px); cursor: pointer;"
+            />
+          </div>
+          <button
+            class="button slider-button"
+            type="button"
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>
+        Props Documentation
+      </h3>
+      <table
+        class="table"
+      >
+        <thead>
+          <tr>
+            <th
+              class="header"
+            >
+              Prop Name
+            </th>
+            <th
+              class="header"
+            >
+              Type
+            </th>
+            <th
+              class="header"
+            >
+              Description
+            </th>
+            <th
+              class="header"
+            >
+              Modify
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="cell"
+            >
+              photos
+            </td>
+            <td
+              class="cell"
+            >
+              IPhoto[]
+            </td>
+            <td
+              class="cell"
+            >
+              An array of photo objects. Each object must contain a 'photos' array, and each photo inside it should have properties like 'url_full'.
+            </td>
+            <td
+              class="cell"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

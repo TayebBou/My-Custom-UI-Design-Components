@@ -10,6 +10,26 @@
   left: -46%;
   background-color: white;
   animation: appear 0.5s forwards;
+
+  @media (max-width: 450px) {
+    width: 90%;
+    left: -90%;
+  }
+
+  @media (min-width: 450px) {
+    width: 390px;
+    left: -390px;
+  }
+
+  @media (min-width: 750px) {
+    width: 50%;
+    left: -50%;
+  }
+
+  @media (min-width: 1086px) {
+    width: 500px;
+    left: -500px;
+  }
 }
 
 .out {
@@ -88,40 +108,5 @@
   }
   100% {
     transform: translateX(0%);
-  }
-}
-
-@media (min-width: 1086px) {
-  .sidebar {
-    width: 500px;
-    left: -500px;
-  }
-}
-
-@media (max-width: 750px) {
-  .sidebar {
-    width: 50%;
-    left: -50%;
-  }
-}
-
-@media (max-width: 700px) {
-  .sidebar {
-    width: 390px;
-    left: -390px;
-  }
-}
-
-@media (max-width: 450px) {
-  .sidebar {
-    width: 90%;
-    left: -90%;
-  }
-}
-
-@media (max-width: 350px) {
-  .sidebar {
-    width: 95%;
-    left: -95%;
   }
 }
